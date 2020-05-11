@@ -7,16 +7,26 @@
 }
 
 .buildings {
+    animation: buildings 4s 3s linear;
     height: 50px;
-    opacity: .15;
+    opacity: .4;
     position: absolute;
     top: 84px;
     transform: scale(5.5);
     width: 50px;
 
     path {
-        fill: $blue;
+        animation: buildings 3.5s 3s linear;
+        fill: none;
+        opacity: .3;
+        stroke: #0F1D38;
+        stroke-width: .5px;
     }
+}
+
+@keyframes buildings {
+    from {stroke-dasharray: 20; opacity: .2;}
+    to {stroke-dasharray: 200; opacity: .4;}
 }
 
 .home__title {
@@ -123,5 +133,75 @@
 
     &:hover {
         transform: scale(1.2) !important;
+    }
+}
+
+//* 
+// Media Queries
+//*
+
+// iPad Pro
+
+@media (max-width: 1024px) {
+    .buildings {
+        top: 215px;
+    }
+}
+
+// Tablet
+
+@media (max-width: 768px) {
+    .buildings {
+        top: 190px;
+    }
+
+    .home__title {
+        font-size: 40px;
+    }
+
+    .home__description {
+        font-size: 30px;
+        max-width: 540px;
+    }
+
+    .home__contact {
+        font-size: 35px;
+    }
+
+    .social-media__icon {
+        font-size: 40px;
+        padding: 10px;
+    }
+}
+
+// Mobile
+
+@media (max-width: 450px) {
+    .buildings {
+        top: 86px;
+        transform: scale(4);
+    }
+
+    .home__title {
+        font-size: 30px;
+    }
+
+    .home__description {
+        font-size: 25px;
+        max-width: 350px;
+    }
+
+    .home__contact {
+        font-size: 30px;
+    }
+
+    .social-media {
+        padding: 0 10px;
+    }
+
+    .social-media__icon {
+        font-size: 25px;
+        margin: 0 30px;
+        padding: 0;
     }
 }

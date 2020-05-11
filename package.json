@@ -45,5 +45,7 @@
 		"lazypipe": "1.0.1",
 		"node-sass": "4.13.0"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"mailgo": "^0.8.5"
+	}
 }
