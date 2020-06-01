@@ -9,9 +9,35 @@
 </head>
 <body>
 	<div class="contato flex-column">	
-		<h1>Precisa de um imóvel?
-			Vou te ajudar!</h1>
-	</div>
+		<h1 class="contact__title">Precisa de um imóvel?</h1>
+			<h2 class="contact__title">Vou te ajudar!</h2>
+
+			<div class="flex-column contact__info">
+				<input class="contact__input" type="text" placeholder="Nome">
+				<input class="contact__input" type="email" placeholder="E-mail">
+				<input class="contact__input" type="tel" placeholder="Telefone">
+
+				<div class="dropdown">
+					<button class="dropbtn">Assunto</button>
+					<div class="dropdown-content">
+					  <a href="#">Empreendimento</a>
+					  <a href="#">Dúvida</a>
+					  <a href="#">Outro</a>
+					</div>
+				  </div>
+
+				<h2>Onde você me encontrou?</h2>
+				<div class="dropdown">
+					<button class="dropbtn">Onde me encontrou?</button>
+					<div class="dropdown-content">
+					  <a href="#">Google</a>
+					  <a href="#">Instagram</a>
+					  <a href="#">Facebook</a>
+					  <a href="#">Indicação</a>
+					</div>
+				</div>
+
+				<a href="#" class="flex-normal contact__btn">Enviar</a>	
 
 	<!-- Scripts -->
 	<script src="https://kit.fontawesome.com/11a0e0cedc.js" crossorigin="anonymous"></script>	

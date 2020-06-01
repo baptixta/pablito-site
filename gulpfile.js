@@ -67,7 +67,6 @@ var del = require('del');
 var flatmap = require('gulp-flatmap');
 var lazypipe = require('lazypipe');
 var rename = require('gulp-rename');
-var mailgo = require('mailgo');
 var header = require('gulp-header');
 var package = require('./package.json');
 
