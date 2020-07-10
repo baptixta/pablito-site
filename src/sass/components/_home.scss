@@ -205,3 +205,20 @@
         padding: 0;
     }
 }
+
+// iPhone 5/SE
+
+@media(max-width: 330px) {
+    .buildings {
+        top: 60px;
+    }
+
+    .home__contact {
+        font-size: 25px;
+    }
+
+    .social-media__icon {
+        font-size: 25px;
+        margin: 0 20px;
+    }
+}
