@@ -2,5 +2,5 @@
 > site
 
 ---
-permalink: dist/index.html
+permalink: /index.html
 ---
