@@ -240,7 +240,7 @@ button {
 
 /* line 111, src/sass/components/_home.scss */
 .home__contact:hover:before {
-  width: 80%;
+  width: 86%;
 }
 
 /* line 116, src/sass/components/_home.scss */
@@ -321,7 +321,7 @@ button {
   }
   /* line 194, src/sass/components/_home.scss */
   .home__contact {
-    font-size: 30px;
+    font-size: 25px;
   }
   /* line 198, src/sass/components/_home.scss */
   .social-media {
@@ -335,16 +335,23 @@ button {
   }
 }
 
+@media (max-width: 411px) {
+  /* line 210, src/sass/components/_home.scss */
+  .home__contact {
+    font-size: 22px;
+  }
+}
+
 @media (max-width: 330px) {
-  /* line 212, src/sass/components/_home.scss */
+  /* line 216, src/sass/components/_home.scss */
   .buildings {
     top: 60px;
   }
-  /* line 216, src/sass/components/_home.scss */
-  .home__contact {
-    font-size: 25px;
-  }
   /* line 220, src/sass/components/_home.scss */
+  .home__contact {
+    font-size: 19px;
+  }
+  /* line 224, src/sass/components/_home.scss */
   .social-media__icon {
     font-size: 25px;
     margin: 0 20px;

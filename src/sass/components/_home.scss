@@ -109,7 +109,7 @@
 
     &:hover {
         &:before {
-            width: 80%;
+            width: 86%;
         }
     }
 
@@ -192,7 +192,7 @@
     }
 
     .home__contact {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .social-media {
@@ -206,7 +206,11 @@
     }
 }
 
-// iPhone 5/SE
+@media(max-width: 411px) {
+    .home__contact {
+        font-size: 22px;
+    }
+}
 
 @media(max-width: 330px) {
     .buildings {
@@ -214,7 +218,7 @@
     }
 
     .home__contact {
-        font-size: 25px;
+        font-size: 19px;
     }
 
     .social-media__icon {
