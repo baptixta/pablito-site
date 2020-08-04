@@ -25,6 +25,13 @@ button {
 		justify-content: center;
 	}
 
+	&-column-align-start {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	&-column {
 		align-items: center;
 		display: flex;
