@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap');
+
+:root {
+	--color-background: #457FC5;
+	--color-button-primary: #5792DA;
+	--color-button-primary-darker: #4e8ad3;
+	--color-button-secondary: #03E09B;
+	--color-button-secondary-darker: #09d192;
+	--color-icon: #00DD98;
+	--color-text: #F4FAFF;
+	font-size: 80%;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Archivo', sans-serif;
+	margin: 0 auto;
+	padding: 0;
+}
+
+html, body {
+	height: 100vh;
+}
+
+input,
+textarea,
+select,
+button {
+	font: inherit;
+}
