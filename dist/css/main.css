@@ -160,8 +160,8 @@ html {
 /* line 73, src/sass/partials/_home.scss */
 .btn.primary:hover {
   background: var(--color-button-primary-darker);
-  -webkit-transform: scale(1.06);
-          transform: scale(1.06);
+  -webkit-transform: scale(1.06) !important;
+          transform: scale(1.06) !important;
 }
 
 /* line 79, src/sass/partials/_home.scss */
@@ -172,8 +172,8 @@ html {
 /* line 82, src/sass/partials/_home.scss */
 .btn.secondary:hover {
   background: var(--color-button-secondary-darker);
-  -webkit-transform: scale(1.06);
-          transform: scale(1.06);
+  -webkit-transform: scale(1.06) !important;
+          transform: scale(1.06) !important;
 }
 
 /* line 88, src/sass/partials/_home.scss */
@@ -202,8 +202,8 @@ html {
 
 /* line 107, src/sass/partials/_home.scss */
 .social-media a img:hover {
-  -webkit-transform: scale(1.12);
-          transform: scale(1.12);
+  -webkit-transform: scale(1.12) !important;
+          transform: scale(1.12) !important;
 }
 
 @media (min-width: 1024px) {
