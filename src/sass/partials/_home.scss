@@ -60,7 +60,6 @@ html {
     color: var(--color-text);
     display: flex;
     font: 400 1.6rem Archivo;
-    justify-content: center;
     margin: 1rem auto;
     min-width: 16rem;
     padding: 1.2rem 2.3rem;
@@ -69,9 +68,11 @@ html {
 
     &.primary {
         background: var(--color-button-primary);
+        
 
         &:hover {
             background: var(--color-button-primary-darker);
+            transform: scale(1.06);
         }
     }
 
@@ -80,12 +81,13 @@ html {
 
         &:hover {
             background: var(--color-button-secondary-darker);
+            transform: scale(1.06);
         }
     }
 
     img {
         height: 2.3rem;
-        margin-right: 1.6rem;
+        margin-right: 1.5rem;
     }
 }
 
@@ -104,5 +106,86 @@ html {
 
     &:hover {
         transform: scale(1.12);
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        font-size: 90%;
+    }
+    
+    #page-home, .container {
+        width: 90vw;
+        height: 100vh;
+        max-width: 1100px;
+    }
+
+    .container {
+        align-content: center;
+        column-gap: 128px;
+        display: grid;
+        grid-template-areas:
+        "logo imagem imagem"
+        "lancamentos imagem imagem"
+        "lancamentos social social"
+        "lancamentos social social";
+        justify-content: center;
+    }
+
+    .logo-container {
+        align-self: end;
+        grid-area: logo;
+        justify-self: end;
+        margin-top: 0;
+    }
+
+    .logo-container p {
+        align-self: flex-start;
+    }
+
+    .buildings {
+        align-self: end;
+        grid-area: imagem;
+        justify-content: flex-start;
+    }
+
+    .buildings img {
+        height: 420px;
+        margin: 0 0 40px;
+    }
+
+    .buttons {
+        align-items: initial;
+        grid-area: lancamentos;
+        margin-top: 0;
+    }
+
+    .buttons h2 {
+        align-self: flex-start;
+    }
+
+    .btn {
+        margin: 1rem 0;
+    }
+
+    .social-media {
+        align-self: end;
+        grid-area: social;
+        margin: 1rem 0;
+    }
+
+    .social-media a {
+        margin: 0 22px;
+    }
+
+    .social-media a img {
+        height: 60px;
+    }
+}
+
+@media (min-width: 700px) {
+    #page-home, .container {
+        width: 90vw;
+        height: 100vh;
     }
 }

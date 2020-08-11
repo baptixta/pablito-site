@@ -144,9 +144,6 @@ html {
   display: -ms-flexbox;
   display: flex;
   font: 400 1.6rem Archivo;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 1rem auto;
   min-width: 16rem;
   padding: 1.2rem 2.3rem;
@@ -155,7 +152,7 @@ html {
   transition: all .3s ease;
 }
 
-/* line 70, src/sass/partials/_home.scss */
+/* line 69, src/sass/partials/_home.scss */
 .btn.primary {
   background: var(--color-button-primary);
 }
@@ -163,44 +160,138 @@ html {
 /* line 73, src/sass/partials/_home.scss */
 .btn.primary:hover {
   background: var(--color-button-primary-darker);
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
 }
 
-/* line 78, src/sass/partials/_home.scss */
+/* line 79, src/sass/partials/_home.scss */
 .btn.secondary {
   background: var(--color-button-secondary);
 }
 
-/* line 81, src/sass/partials/_home.scss */
+/* line 82, src/sass/partials/_home.scss */
 .btn.secondary:hover {
   background: var(--color-button-secondary-darker);
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
 }
 
-/* line 86, src/sass/partials/_home.scss */
+/* line 88, src/sass/partials/_home.scss */
 .btn img {
   height: 2.3rem;
-  margin-right: 1.6rem;
+  margin-right: 1.5rem;
 }
 
-/* line 92, src/sass/partials/_home.scss */
+/* line 94, src/sass/partials/_home.scss */
 .social-media {
   margin: 3rem auto 4rem;
 }
 
-/* line 96, src/sass/partials/_home.scss */
+/* line 98, src/sass/partials/_home.scss */
 .social-media a {
   margin: 0 1.2rem;
   text-decoration: none;
 }
 
-/* line 101, src/sass/partials/_home.scss */
+/* line 103, src/sass/partials/_home.scss */
 .social-media a img {
   height: 2.5rem;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-/* line 105, src/sass/partials/_home.scss */
+/* line 107, src/sass/partials/_home.scss */
 .social-media a img:hover {
   -webkit-transform: scale(1.12);
           transform: scale(1.12);
+}
+
+@media (min-width: 1024px) {
+  /* line 113, src/sass/partials/_home.scss */
+  :root {
+    font-size: 90%;
+  }
+  /* line 117, src/sass/partials/_home.scss */
+  #page-home, .container {
+    width: 90vw;
+    height: 100vh;
+    max-width: 1100px;
+  }
+  /* line 123, src/sass/partials/_home.scss */
+  .container {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-column-gap: 128px;
+       -moz-column-gap: 128px;
+            column-gap: 128px;
+    display: grid;
+    grid-template-areas: "logo imagem imagem" "lancamentos imagem imagem" "lancamentos social social" "lancamentos social social";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 135, src/sass/partials/_home.scss */
+  .logo-container {
+    align-self: end;
+    grid-area: logo;
+    justify-self: end;
+    margin-top: 0;
+  }
+  /* line 142, src/sass/partials/_home.scss */
+  .logo-container p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  /* line 146, src/sass/partials/_home.scss */
+  .buildings {
+    align-self: end;
+    grid-area: imagem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  /* line 152, src/sass/partials/_home.scss */
+  .buildings img {
+    height: 420px;
+    margin: 0 0 40px;
+  }
+  /* line 157, src/sass/partials/_home.scss */
+  .buttons {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    grid-area: lancamentos;
+    margin-top: 0;
+  }
+  /* line 163, src/sass/partials/_home.scss */
+  .buttons h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  /* line 167, src/sass/partials/_home.scss */
+  .btn {
+    margin: 1rem 0;
+  }
+  /* line 171, src/sass/partials/_home.scss */
+  .social-media {
+    align-self: end;
+    grid-area: social;
+    margin: 1rem 0;
+  }
+  /* line 177, src/sass/partials/_home.scss */
+  .social-media a {
+    margin: 0 22px;
+  }
+  /* line 181, src/sass/partials/_home.scss */
+  .social-media a img {
+    height: 60px;
+  }
+}
+
+@media (min-width: 700px) {
+  /* line 187, src/sass/partials/_home.scss */
+  #page-home, .container {
+    width: 90vw;
+    height: 100vh;
+  }
 }
