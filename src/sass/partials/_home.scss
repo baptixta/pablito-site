@@ -54,6 +54,19 @@ html {
     font: 500 1.8rem Archivo;
 }
 
+.obras {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.obras h2 {
+    color: var(--color-text);
+    font: 500 1.8rem Archivo;
+}
+
 .btn {
     align-items: center;
     border-radius: .4rem;
@@ -116,7 +129,7 @@ html {
     
     #page-home, .container {
         width: 90vw;
-        height: 100vh;
+        min-height: 100vh;
         max-width: 1100px;
     }
 
@@ -126,8 +139,8 @@ html {
         display: grid;
         grid-template-areas:
         "logo imagem imagem"
-        "lancamentos imagem imagem"
-        "lancamentos social social"
+        "logo imagem imagem"
+        "lancamentos obras obras"
         "lancamentos social social";
         justify-content: center;
     }
@@ -150,8 +163,14 @@ html {
     }
 
     .buildings img {
-        height: 420px;
+        height: 360px;
         margin: 0 0 40px;
+    }
+
+    .obras {
+        align-items: initial;
+        grid-area: obras;
+        margin-top: 0; 
     }
 
     .buttons {
@@ -186,6 +205,6 @@ html {
 @media (min-width: 700px) {
     #page-home, .container {
         width: 90vw;
-        height: 100vh;
+        min-height: 100vh;
     }
 }
