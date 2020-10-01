@@ -249,7 +249,7 @@ html {
        -moz-column-gap: 128px;
             column-gap: 128px;
     display: grid;
-    grid-template-areas: "logo imagem imagem" "logo imagem imagem" "lancamentos obras obras" "lancamentos social social";
+    grid-template-areas: "logo imagem imagem" "lancamentos imagem imagem" "lancamentos obras obras" "lancamentos social social";
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
