@@ -1,4 +1,5 @@
 /*! project-name v0.0.1 | (c) 2021 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap");
 /* line 3, src/sass/partials/_base.scss */
 :root {
@@ -190,8 +191,13 @@ body {
   margin-top: 20px;
 }
 
+/* line 327, src/sass/partials/_home.scss */
+.header__button {
+  display: none;
+}
+
 @media (max-width: 900px) {
-  /* line 330, src/sass/partials/_home.scss */
+  /* line 334, src/sass/partials/_home.scss */
   .header__content {
     -webkit-box-align: inherit;
         -ms-flex-align: inherit;
@@ -201,15 +207,16 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /* line 335, src/sass/partials/_home.scss */
+  /* line 339, src/sass/partials/_home.scss */
   .header__title {
     margin-left: 20px;
   }
-  /* line 339, src/sass/partials/_home.scss */
+  /* line 343, src/sass/partials/_home.scss */
   .header__nav {
     background: var(--color-background);
+    display: none;
   }
-  /* line 342, src/sass/partials/_home.scss */
+  /* line 347, src/sass/partials/_home.scss */
   .header__nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -217,31 +224,31 @@ body {
             flex-direction: column;
     margin: 5px 0px;
   }
-  /* line 346, src/sass/partials/_home.scss */
+  /* line 351, src/sass/partials/_home.scss */
   .header__nav ul li {
     margin: 0;
     padding: 12px 20px;
     border-bottom: 1px solid #dfdfdf;
   }
-  /* line 351, src/sass/partials/_home.scss */
+  /* line 356, src/sass/partials/_home.scss */
   .header__nav ul li:last-child {
     border-bottom: none;
   }
-  /* line 357, src/sass/partials/_home.scss */
+  /* line 362, src/sass/partials/_home.scss */
   .header__nav .dropdown {
     margin-right: 0px;
   }
-  /* line 361, src/sass/partials/_home.scss */
+  /* line 366, src/sass/partials/_home.scss */
   .header__nav .dropdown:hover ul {
     position: relative;
   }
-  /* line 366, src/sass/partials/_home.scss */
+  /* line 371, src/sass/partials/_home.scss */
   .header__nav .dropdown:after {
     left: 140px;
     right: 0px;
     top: 18px;
   }
-  /* line 372, src/sass/partials/_home.scss */
+  /* line 377, src/sass/partials/_home.scss */
   .header__nav .dropdown ul {
     background: var(--color-background);
     border: initial;
@@ -250,9 +257,52 @@ body {
     position: absolute;
     width: 100%;
   }
-  /* line 380, src/sass/partials/_home.scss */
+  /* line 385, src/sass/partials/_home.scss */
   .header__nav .dropdown ul a {
     font-size: 16px;
     border-bottom: 1px solid #dfdfdf;
+  }
+  /* line 393, src/sass/partials/_home.scss */
+  .header__button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+  }
+  /* line 403, src/sass/partials/_home.scss */
+  .menu-mobile {
+    height: 25px;
+    right: -32px;
+    position: absolute;
+    top: 6px;
+    width: 30px;
+    z-index: 20;
+  }
+  /* line 412, src/sass/partials/_home.scss */
+  .show-menu-mobile {
+    display: block;
+  }
+  /* line 417, src/sass/partials/_home.scss */
+  .header__button-icon:before {
+    content: "☰";
+    font-size: 30px;
+    position: absolute;
+  }
+  /* line 425, src/sass/partials/_home.scss */
+  .header__button-icon-exit:before {
+    content: "X";
+    font-size: 30px;
+    right: -24px;
+    position: absolute;
+    top: 7px;
   }
 }
