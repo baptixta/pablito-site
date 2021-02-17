@@ -1,12 +1,12 @@
-/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/*! project-name v0.0.1 | (c) 2021 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap");
 /* line 3, src/sass/partials/_base.scss */
 :root {
-  --color-background: #457FC5;
-  --color-button-primary: #5792DA;
-  --color-button-primary-darker: #4e8ad3;
+  --color-background: #F5F5F5;
+  --color-hover-menu: #6ca5eb;
   --color-button-secondary: #03E09B;
   --color-button-secondary-darker: #09d192;
+  --color-header: #ffffff;
   --color-icon: #00DD98;
   --color-text: #F4FAFF;
   font-size: 80%;
@@ -34,18 +34,20 @@ button {
   font: inherit;
 }
 
-/* line 1, src/sass/partials/_home.scss */
-html {
+/* line 212, src/sass/partials/_home.scss */
+body {
   background: var(--color-background);
 }
 
-/* line 5, src/sass/partials/_home.scss */
-#page-home, .container {
-  width: 90vw;
+/* line 216, src/sass/partials/_home.scss */
+.wrapper {
+  margin: auto;
+  max-width: 1200px;
+  position: relative;
 }
 
-/* line 9, src/sass/partials/_home.scss */
-.container {
+/* line 222, src/sass/partials/_home.scss */
+.home {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -61,269 +63,129 @@ html {
           justify-content: center;
 }
 
-/* line 16, src/sass/partials/_home.scss */
-.logo-container {
+/* line 229, src/sass/partials/_home.scss */
+.header {
+  background: var(--color-header);
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+}
+
+/* line 235, src/sass/partials/_home.scss */
+.header__title {
+  font-size: 40px;
+  margin: 10px 0px;
+}
+
+/* line 240, src/sass/partials/_home.scss */
+.header__content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-/* line 24, src/sass/partials/_home.scss */
-.logo-container p {
-  color: var(--color-text);
-  font-size: 2rem;
+/* line 246, src/sass/partials/_home.scss */
+.header__nav {
+  font-size: 18px;
 }
 
-/* line 29, src/sass/partials/_home.scss */
-.logo-container img {
-  height: 4.6rem;
-}
-
-/* line 33, src/sass/partials/_home.scss */
-.buildings {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* line 249, src/sass/partials/_home.scss */
+.header__nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  list-style: none;
+  padding: 0px;
 }
 
-/* line 39, src/sass/partials/_home.scss */
-.buildings img {
-  height: 15rem;
-  margin-top: 1.5rem;
+/* line 254, src/sass/partials/_home.scss */
+.header__nav ul li {
+  margin: 10px 20px;
 }
 
-/* line 44, src/sass/partials/_home.scss */
-.buttons {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 2.5rem;
-}
-
-/* line 52, src/sass/partials/_home.scss */
-.buttons h2 {
-  color: var(--color-text);
-  font: 500 1.8rem Archivo;
-}
-
-/* line 57, src/sass/partials/_home.scss */
-.obras {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 2.5rem;
-}
-
-/* line 65, src/sass/partials/_home.scss */
-.obras h2 {
-  color: var(--color-text);
-  font: 500 1.8rem Archivo;
-}
-
-/* line 70, src/sass/partials/_home.scss */
-.btn {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: .4rem;
-  color: var(--color-text);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font: 400 1.6rem Archivo;
-  margin: 1rem auto;
-  min-width: 16rem;
-  padding: 1.2rem 2.3rem;
+/* line 257, src/sass/partials/_home.scss */
+.header__nav ul li a {
+  color: #000000;
   text-decoration: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+/* line 262, src/sass/partials/_home.scss */
+.header__nav ul li a:hover {
+  color: var(--color-hover-menu);
+}
+
+/* line 270, src/sass/partials/_home.scss */
+.header__nav .active a {
+  color: var(--color-hover-menu);
+}
+
+/* line 275, src/sass/partials/_home.scss */
+.header__nav .dropdown {
+  margin-right: 35px;
+  position: relative;
+}
+
+/* line 279, src/sass/partials/_home.scss */
+.header__nav .dropdown:hover {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-/* line 82, src/sass/partials/_home.scss */
-.btn.primary {
-  background: var(--color-button-primary);
+/* line 281, src/sass/partials/_home.scss */
+.header__nav .dropdown:hover ul {
+  opacity: inherit;
+  visibility: visible;
 }
 
-/* line 86, src/sass/partials/_home.scss */
-.btn.primary:hover {
-  background: var(--color-button-primary-darker);
-  -webkit-transform: scale(1.06) !important;
-          transform: scale(1.06) !important;
+/* line 286, src/sass/partials/_home.scss */
+.header__nav .dropdown:hover::after {
+  border: solid var(--color-hover-menu);
+  border-width: 0 2px 2px 0;
 }
 
-/* line 92, src/sass/partials/_home.scss */
-.btn.secondary {
-  background: var(--color-button-secondary);
-}
-
-/* line 95, src/sass/partials/_home.scss */
-.btn.secondary:hover {
-  background: var(--color-button-secondary-darker);
-  -webkit-transform: scale(1.06) !important;
-          transform: scale(1.06) !important;
-}
-
-/* line 101, src/sass/partials/_home.scss */
-.btn img {
-  height: 2.3rem;
-  margin-right: 1.5rem;
-}
-
-/* line 107, src/sass/partials/_home.scss */
-.social-media {
-  margin: 3rem auto 4rem;
-}
-
-/* line 111, src/sass/partials/_home.scss */
-.social-media a {
-  margin: 0 1.2rem;
-  text-decoration: none;
-}
-
-/* line 116, src/sass/partials/_home.scss */
-.social-media a img {
-  height: 2.5rem;
+/* line 292, src/sass/partials/_home.scss */
+.header__nav .dropdown:after {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  content: "";
+  height: 5px;
+  position: absolute;
+  right: -20px;
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  width: 5px;
 }
 
-/* line 120, src/sass/partials/_home.scss */
-.social-media a img:hover {
-  -webkit-transform: scale(1.12) !important;
-          transform: scale(1.12) !important;
+/* line 306, src/sass/partials/_home.scss */
+.header__nav .dropdown ul {
+  background: var(--color-header);
+  border: 1px solid #eaeaea;
+  border-top: 2px solid var(--color-hover-menu);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  visibility: hidden;
+  width: 240px;
 }
 
-@media (min-width: 1024px) {
-  /* line 126, src/sass/partials/_home.scss */
-  :root {
-    font-size: 90%;
-  }
-  /* line 130, src/sass/partials/_home.scss */
-  #page-home, .container {
-    width: 90vw;
-    min-height: 100vh;
-    max-width: 1100px;
-  }
-  /* line 136, src/sass/partials/_home.scss */
-  .container {
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-column-gap: 128px;
-       -moz-column-gap: 128px;
-            column-gap: 128px;
-    display: grid;
-    grid-template-areas: "logo imagem imagem" "lancamentos imagem imagem" "lancamentos obras obras" "lancamentos social social";
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  /* line 148, src/sass/partials/_home.scss */
-  .logo-container {
-    align-self: end;
-    grid-area: logo;
-    justify-self: end;
-    margin-top: 0;
-  }
-  /* line 155, src/sass/partials/_home.scss */
-  .logo-container p {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-  /* line 159, src/sass/partials/_home.scss */
-  .buildings {
-    align-self: end;
-    grid-area: imagem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  /* line 165, src/sass/partials/_home.scss */
-  .buildings img {
-    height: 360px;
-    margin: 0 0 40px;
-  }
-  /* line 170, src/sass/partials/_home.scss */
-  .obras {
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial;
-    grid-area: obras;
-    margin-top: 0;
-  }
-  /* line 176, src/sass/partials/_home.scss */
-  .buttons {
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial;
-    grid-area: lancamentos;
-    margin-top: 0;
-  }
-  /* line 182, src/sass/partials/_home.scss */
-  .buttons h2 {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-  /* line 186, src/sass/partials/_home.scss */
-  .btn {
-    margin: 1rem 0;
-  }
-  /* line 190, src/sass/partials/_home.scss */
-  .social-media {
-    align-self: end;
-    grid-area: social;
-    margin: 1rem 0;
-  }
-  /* line 196, src/sass/partials/_home.scss */
-  .social-media a {
-    margin: 0 22px;
-  }
-  /* line 200, src/sass/partials/_home.scss */
-  .social-media a img {
-    height: 60px;
-  }
-}
-
-@media (min-width: 700px) {
-  /* line 206, src/sass/partials/_home.scss */
-  #page-home, .container {
-    width: 90vw;
-    min-height: 100vh;
-  }
+/* line 321, src/sass/partials/_home.scss */
+.header__nav .dropdown-item :first-child {
+  margin-top: 20px;
 }
