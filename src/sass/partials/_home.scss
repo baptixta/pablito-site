@@ -139,9 +139,8 @@ html {
         display: grid;
         grid-template-areas:
         "logo imagem imagem"
-        "lancamentos imagem imagem"
-        "lancamentos obras obras"
-        "lancamentos social social";
+        "logo imagem imagem"
+        "social social social";
         justify-content: center;
     }
 
@@ -191,6 +190,7 @@ html {
         align-self: end;
         grid-area: social;
         margin: 1rem 0;
+        justify-self: center;
     }
 
     .social-media a {
